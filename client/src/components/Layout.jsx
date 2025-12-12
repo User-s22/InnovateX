@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Calendar, Map, LogOut, User } from 'lucide-react';
+import { Home, Calendar, Map, LogOut, User, FileText, Pill, MessageSquare, Settings } from 'lucide-react';
 
 const Layout = ({ children, user, setUser }) => {
     const location = useLocation();
@@ -11,8 +11,13 @@ const Layout = ({ children, user, setUser }) => {
 
     const navItems = [
         { label: 'Dashboard', path: '/', icon: <Home size={20} /> },
+        { label: 'Medical Records', path: '/records', icon: <FileText size={20} /> },
+        { label: 'Prescriptions', path: '/prescriptions', icon: <Pill size={20} /> },
         { label: 'Appointments', path: '/appointments', icon: <Calendar size={20} /> },
         { label: 'Hospitals', path: '/hospitals', icon: <Map size={20} /> },
+        { label: 'Messages', path: '/messages', icon: <MessageSquare size={20} /> },
+        { label: 'Settings', path: '/settings', icon: <Settings size={20} /> },
+        { label: 'Profile', path: '/profile', icon: <User size={20} /> },
     ];
 
     return (

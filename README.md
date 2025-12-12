@@ -30,3 +30,8 @@ npm run dev
 - **Dashboard**: Overview of health stats.
 - **Appointments**: Book appointments with doctors.
 - **Hospitals**: Map view of nearby hospitals.
+- **Medical Records**: View and search lab reports and imaging results.
+- **Prescriptions**: manage medications and request refills.
+- **Messages**: Chat with doctors and support staff.
+- **Settings**: Configure app preferences (Dark Mode, Notifications).
+- **Profile**: View user details.
